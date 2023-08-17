@@ -113,9 +113,51 @@ h2 {
     font-weight: 400;
     line-height: normal;
 }
-  .header img {
+.header img {
+    position: inherit;
     width: 40px;
     height: 40px;
     padding: 10px;
     opacity: 0;
   }
+
+.section-3 .portrait {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 370px);
+    grid-template-areas: "item-1 item-2 item-3"
+                         "item-4 item-2 item-5"
+                         "item-6 item-7 item-5"
+                         "item-6 item-8 item-8"
+                         "item-9 item-9 item-10";
+}
+.section-3 .portrait .item:nth-child(1) {
+    grid-area: item-1;
+}
+.section-3 .portrait .item:nth-child(2) {
+    grid-area: item-2;
+}
+.section-3 .portrait .item:nth-child(3) {
+    grid-area: item-3;
+}
+.section-3 .portrait .item:nth-child(4) {
+    grid-area: item-4;
+}
+.section-3 .portrait .item:nth-child(5) {
+    grid-area: item-5;
+}
+.section-3 .portrait .item:nth-child(6) {
+    grid-area: item-6;
+}
+.section-3 .portrait .item:nth-child(7) {
+    grid-area: item-7;
+}
+.section-3 .portrait .item:nth-child(8) {
+    grid-area: item-8;
+}
+.section-3 .portrait .item:nth-child(9) {
+    grid-area: item-9;
+}
+.section-3 .portrait .item:nth-child(10) {
+    grid-area: item-10;
+}
