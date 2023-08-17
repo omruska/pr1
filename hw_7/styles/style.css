@@ -62,7 +62,35 @@ h2 {
     width: 100%;
     height: 100%;
 }
-.item .author {
+.section-1 .author {
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%);
+}
+.section-2 .author {
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%);
+}
+.section-3 .author {
     padding: 0 20px 20px 20px;
     box-sizing: border-box;
     position: absolute;
