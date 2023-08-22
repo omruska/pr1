@@ -31,7 +31,7 @@ header nav ul {
 li {
     list-style-type: none;
   }
-header nav a {
+header nav a, header nav span {
     color: #000;
     font-family: Staatliches;
     font-size: 22px;
@@ -40,6 +40,9 @@ header nav a {
     line-height: normal;
     letter-spacing: 0.66px;
     text-decoration: unset;
+}
+header nav span {
+    background: unset;
 }
 h1 {
     display: inline-block;
