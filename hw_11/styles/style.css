@@ -1,12 +1,25 @@
+* {
+    box-sizing: border-box;
+}
 .container {
     width: 100%;
     max-width: 1200px;
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header {
     display: flex;
     align-items: center;
     height: 54px;
     padding-top: 13px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
 }
 header .eng {
     color: #000;
@@ -20,7 +33,7 @@ header .eng {
     text-decoration: none;
     margin-right: 50px;
 }
-header nav ul {
+.header-menu ul {
     display: flex;
     align-items: flex-start;
     gap: 10px;
@@ -42,6 +55,57 @@ header nav a, header nav span {
 header nav span {
     background: unset;
 }
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar content content";
+}
+.sidebar:nth-child(1) {
+    grid-area: sidebar;
+    gap: 70px;
+}
+.content:nth-child(2) {
+    grid-area: content;
+}
+.sidebar {
+    display: grid;
+    flex-direction: column;
+    gap: 70px;
+    position: sticky;
+    top:100px;
+    width: 385px; 
+    height: 462px;
+    background-color: #fff; 
+    z-index: 100; 
+}
+.sidebar a{
+    color: #000;
+    font-family: Francois One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; 
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    text-decoration: unset;
+    border-bottom: 1px solid #BDBDBD;
+    gap: 10px;
+}
+.content {
+    display: flex;
+    width: 785px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+}
 h1 {
     display: inline-block;
     color: #000;
@@ -52,7 +116,6 @@ h1 {
     line-height: 48px; 
     letter-spacing: 1.44px;
     text-transform: uppercase;
-    position: relative;
     margin: 0;
 }
 sup {
@@ -71,7 +134,6 @@ sup {
     height: 8px;
     background: #000;
     margin-bottom: 20px;
-    margin-top: 70px;
 }
 .intoduction {
     display: flex;
@@ -89,29 +151,6 @@ p {
 }
 span {
     background-color: rgb(223, 220, 220);
-}
-.content {
-    margin-left: 415px;
-}
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 385px;
-    gap: 70px;
-}
-.sidebar a{
-    color: #000;
-    font-family: Francois One;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px; 
-    letter-spacing: 1.44px;
-    text-transform: uppercase;
-    text-decoration: unset;
-    border-bottom: 1px solid #BDBDBD;
-    gap: 10px;
 }
 .bg {
     position: fixed;
