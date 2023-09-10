@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 970px;
+    .fashion-platform, .project, .research, .sketches, .design {
+        margin-bottom: 90px;
+        p {
+            color: var(--base-black, #000);
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 8px;
+            margin-bottom: 38px;
+        }
+        h1 {
+            color: var(--base-black, #000);
+            font-family: 'Red Hat Display';
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 64px; 
+            letter-spacing: 2.4px;
+            margin-bottom: 70px;
+        }
+        h2 {
+            color: var(--base-black, #000);
+            font-family: 'Red Hat Display';
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 166%;
+            letter-spacing: 2.8px;
+            margin-bottom: 50px;
+        }
+        h3 {
+            color: var(--Grey-700, #565656);
+            font-family: Lato;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; 
+            letter-spacing: 0.95px;
+        }
+        img {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+}
+footer {
+    background: var(--Grey-100, #F4F4F4);
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 70px;
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            h4 {
+                color: var(--base-black, #000);
+                font-family: 'Red Hat Display';
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 64px; 
+                letter-spacing: 2.4px;
+                margin-bottom: 30px;
+            }
+            p {
+                color: var(--base-black, #000);
+                font-family: Lato;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 166%; 
+                letter-spacing: 1.6px;
+                margin-bottom: 14.71px;
+            }
+        }
+        .social {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            ul {
+                display: flex;
+                gap: 23px;
+                li a {
+                    border: 1px solid #565656;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    background:  #FFF ;
+                    --social_icon_color: #565656;
+                    svg {
+                        max-height: 100%;
+                        height: 24px;
+                        &.facebook-icon {
+                            width: 12.854px;
+                        }
+                        &.instagram-icon {
+                            width: 24.005px;
+                        }
+                        &.twitter-icon {
+                             width: 29.55px;
+                        }
+                        &.linkedin-icon {
+                            width: 24.001px;
+                        }
+                    }
+                    &:hover {
+                        background: var(--gray, #565656);
+                        --social_icon_color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+}    
+@media (max-width: 769px) {
+    main{ 
+        .fashion-platform, .project, .research, .sketches, .design {  
+            padding-left: 15px;
+            padding-right: 15px;
+            flex-direction: column;
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        justify-content: center;
+        gap: 40px;
+        div {
+            display: flex;
+            flex-direction: column;
+            .social, .contact {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+} 
+@media (max-width: 495px) {
+    main {
+        gap: 70px;
+        .fashion-platform, .project, .research, .sketches, .design {  
+            padding-left: 15px;
+            padding-right: 15px;
+            flex-direction: column;
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
+        div {
+            display: flex;
+            flex-direction: column;
+            .social, .contact {
+                display: flex;
+                align-items: center;
+                h4 {
+                    color: var(--base-black, #000);
+                    font-family: 'Red Hat Display';
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.6px;
+                }
+            }
+        }
+    }
+} 
