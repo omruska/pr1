@@ -3,16 +3,20 @@
 }
 .container {
     width: 100%;
-    max-width: 970px;
+    max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 main {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    max-width: 970px;
     .fashion-platform, .project, .research, .sketches, .design {
         margin-bottom: 90px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
         p {
             color: var(--base-black, #000);
             font-family: Lato;
@@ -51,10 +55,6 @@ main {
             font-weight: 400;
             line-height: 32px; 
             letter-spacing: 0.95px;
-        }
-        img {
-            margin-bottom: 20px;
-            width: 100%;
         }
     }
 }
@@ -144,6 +144,9 @@ footer {
             padding-left: 15px;
             padding-right: 15px;
             flex-direction: column;
+            img {
+                height: 380px;
+            }
         }
     }
     footer {
@@ -199,3 +202,13 @@ footer {
         }
     }
 } 
+@media(min-width: 768px) {
+    img {
+        height: 380px;
+    }
+}
+@media(max-width: 767px) {
+    img {
+        height: 300px;
+    }
+}

@@ -4,18 +4,22 @@
 
 .container {
   width: 100%;
-  max-width: 970px;
+  max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  max-width: 970px;
 }
 main .fashion-platform, main .project, main .research, main .sketches, main .design {
   margin-bottom: 90px;
+}
+main .fashion-platform img, main .project img, main .research img, main .sketches img, main .design img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 main .fashion-platform p, main .project p, main .research p, main .sketches p, main .design p {
   color: var(--base-black, #000);
@@ -55,10 +59,6 @@ main .fashion-platform h3, main .project h3, main .research h3, main .sketches h
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.95px;
-}
-main .fashion-platform img, main .project img, main .research img, main .sketches img, main .design img {
-  margin-bottom: 20px;
-  width: 100%;
 }
 
 footer {
@@ -148,6 +148,9 @@ footer .copyright {
     padding-right: 15px;
     flex-direction: column;
   }
+  main .fashion-platform img, main .project img, main .research img, main .sketches img, main .design img {
+    height: 380px;
+  }
   footer {
     display: flex;
     flex-direction: column;
@@ -199,5 +202,15 @@ footer .copyright {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.6px;
+  }
+}
+@media (min-width: 768px) {
+  img {
+    height: 380px;
+  }
+}
+@media (max-width: 767px) {
+  img {
+    height: 300px;
   }
 }
